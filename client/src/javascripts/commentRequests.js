@@ -16,7 +16,7 @@ async function addComment(postId, text) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 
@@ -35,7 +35,7 @@ async function editComment(postId, commentId, text) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 
@@ -53,7 +53,7 @@ async function deleteComment(postId, commentId) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 

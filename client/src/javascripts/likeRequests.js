@@ -15,7 +15,7 @@ async function addLike(postId) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 
@@ -32,7 +32,7 @@ async function deleteLike(postId) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 

@@ -11,7 +11,7 @@ async function getUser() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 
@@ -24,7 +24,7 @@ async function getOtherUser(username) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 
@@ -37,7 +37,7 @@ async function getSuggestedUsers() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'no-cors',
+      mode: 'cors',
     });
 }
 
