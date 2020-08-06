@@ -286,7 +286,7 @@ expressApp.use(methodOverride('_method'));
 expressApp.use((req, res, next) => {
   //res.header('Access-Control-Allow-Origin', 'http://yt-photogram.herokuapp.com');
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Allow-Credentials', 'false');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
