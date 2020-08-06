@@ -106,6 +106,7 @@ router.post('/login',
   checkNotAuthenticated,
   passport.authenticate('local'),
   (req, res) => {
+    res.header('Access-Control-Allow-Origin','http://yt-photogram.herokuapp.com')
     res.sendStatus(200);
   },
   (req, res) => {
