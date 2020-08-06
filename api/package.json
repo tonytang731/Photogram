@@ -22,7 +22,7 @@
     "express-session": "^1.17.0",
     "express-validator": "^6.3.0",
     "http-errors": "~1.6.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "json-stringify-safe": "^5.0.1",
     "method-override": "^3.0.0",
     "mongo-store": "0.0.2",
