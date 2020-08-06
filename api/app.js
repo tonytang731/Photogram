@@ -15,6 +15,7 @@ const mongoose = require('mongoose');
 const MongoStore = require('connect-mongo')(session);
 const multer = require('multer');
 const User = require('./models/User');
+const cors = require('cors');
 require('dotenv').config();
 
 /**
@@ -283,10 +284,11 @@ expressApp.use(express.static(path.join(__dirname, 'public')));
 expressApp.use(passport.initialize());
 expressApp.use(passport.session());
 expressApp.use(methodOverride('_method'));
+expressApp.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 expressApp.use((req, res, next) => {
   //res.header('Access-Control-Allow-Origin', 'http://yt-photogram.herokuapp.com');
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Credentials', 'false');
+  res.header('Access-Control-Allow-Origin', 'localhost:3000');
+  res.header('Access-Control-Allow-Credentials', 'true');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
