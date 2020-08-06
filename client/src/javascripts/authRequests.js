@@ -30,7 +30,7 @@ async function login(email, password) {
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
-        Accept: 'application/json; charset=UTF-8',
+        Accept: 'application/json; charset=UTF-8'
       },
       credentials: 'include',
       mode: 'cors',
