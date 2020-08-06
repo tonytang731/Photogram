@@ -15,7 +15,7 @@ async function follow(username) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -32,7 +32,7 @@ async function unfollow(username) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 

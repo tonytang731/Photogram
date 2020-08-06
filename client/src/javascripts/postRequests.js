@@ -16,7 +16,7 @@ async function addPost(title, description, privacy, image, tags) {
       method: 'POST',
       body: formData,
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -34,7 +34,7 @@ async function editPost(postId, title, description) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -47,7 +47,7 @@ async function getPost(postId) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -60,7 +60,7 @@ async function getFeed() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -73,7 +73,7 @@ async function getLikes() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -89,7 +89,7 @@ async function deletePost(postId) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 

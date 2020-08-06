@@ -11,6 +11,6 @@ export default async function testAPI() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }

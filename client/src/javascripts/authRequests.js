@@ -16,7 +16,7 @@ async function register(firstName, lastName, email, password, username, image = 
       method: 'POST',
       body: formData,
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -33,7 +33,7 @@ async function login(email, password) {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -46,7 +46,7 @@ async function logout() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
@@ -59,7 +59,7 @@ async function checkAuth() {
         Accept: 'application/json; charset=UTF-8',
       },
       credentials: 'include',
-      mode: 'cors',
+      mode: 'no-cors',
     });
 }
 
